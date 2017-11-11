@@ -1,31 +1,57 @@
 <!doctype html>
-<!-- This is a modified source code of cpprefjp (https://cpprefjp.github.io/). Contents are distributed under the CC BY 3.0 license (https://creativecommons.org/licenses/by/3.0/)  -->
 <html class=cpprefjp lang=ja itemscope itemtype=http://schema.org/WebPage>
 
 <head>
   <meta charset=UTF-8>
-  <title>{{ htmlWebpackPlugin.options.title }} vector::emplace_back - cpprefjp C++日本語リファレンス</title>
+  <title>cpprefjp - C++日本語リファレンス</title>
   <meta name=viewport content="width=device-width,initial-scale=1">
-  <meta name=keywords content="C++,標準ライブラリ,リファレンス,ドキュメント,STL,std,cpp11,vector,std,vector,function">
-  <meta name=title content="vector::emplace_back - cpprefjp C++日本語リファレンス">
-  <meta itemprop=name content="vector::emplace_back - cpprefjp C++日本語リファレンス">
-  <meta property=og:title content="vector::emplace_back - cpprefjp C++日本語リファレンス">
-  <meta property=og:url content=https://cpprefjp.github.io//reference/vector/emplace_back.html>
+  <meta name=keywords content="
+  C++,標準ライブラリ,リファレンス,ドキュメント,STL,std,
+">
+  <meta name=title content="cpprefjp - C++日本語リファレンス">
+  <meta itemprop=name content="cpprefjp - C++日本語リファレンス">
+  <meta property=og:title content="cpprefjp - C++日本語リファレンス">
+  <meta property=og:url content=https://cpprefjp.github.io//index.html>
   <meta property=og:site_name content="cpprefjp - C++日本語リファレンス">
   <meta property=og:type content=article>
-  <meta property=og:description content=直接構築で新たな要素を末尾に追加する。>
+  <meta property=og:description content="cpprefjp - C++日本語リファレンス 本サイトcpprefjpは、プログラミング言語C++のリファレンスを提供するWebサイトです。 最新C++バージョンのリファレンスを提供していきます。 運営方針 本リファレンスサイトは、C++言語の最新のリファレンスを常に提供し続けることを目標にしています。 各クラス、関数にはそれぞれ1つ以上のサンプルコードを付けていく方針です。 本サイトでは、他サ">
   <meta name=twitter:card content=summary>
-  <meta name=twitter:title content="vector::emplace_back - cpprefjp C++日本語リファレンス">
-  <meta name=twitter:url content=https://cpprefjp.github.io//reference/vector/emplace_back.html>
-  <meta name=twitter:description content=直接構築で新たな要素を末尾に追加する。>
+  <meta name=twitter:title content="cpprefjp - C++日本語リファレンス">
+  <meta name=twitter:url content=https://cpprefjp.github.io//index.html>
+  <meta name=twitter:description content="cpprefjp - C++日本語リファレンス 本サイトcpprefjpは、プログラミング言語C++のリファレンスを提供するWebサイトです。 最新C++バージョンのリファレンスを提供していきます。 運営方針 本リファレンスサイトは、C++言語の最新のリファレンスを常に提供し続けることを目標にしています。 各クラス、関数にはそれぞれ1つ以上のサンプルコードを付けていく方針です。 本サイトでは、他サ">
   <link rel=alternate type=application/atom+xml title=Atom href=https://cpprefjp.github.io/rss.xml>
-  <link rel=apple-touch-icon sizes=180x180 href=https://cpprefjp.github.io/static/favicons/apple-touch-icon.png>
-  <link rel=icon type=image/png sizes=32x32 href=https://cpprefjp.github.io/static/favicons/favicon-32x32.png>
-  <link rel=icon type=image/png sizes=16x16 href=https://cpprefjp.github.io/static/favicons/favicon-16x16.png>
-  <link rel=manifest href=https://cpprefjp.github.io/static/favicons/manifest.json>
-  <link rel=mask-icon href=/static/favicons/safari-pinned-tab.svg color=#f5f8fc>
+  <link rel=apple-touch-icon sizes=180x180 href="https://cpprefjp.github.io/static/favicons/apple-touch-icon.png?cachebust=1510194905180">
+  <link rel=icon type=image/png sizes=32x32 href="https://cpprefjp.github.io/static/favicons/favicon-32x32.png?cachebust=1510194905180">
+  <link rel=icon type=image/png sizes=16x16 href="https://cpprefjp.github.io/static/favicons/favicon-16x16.png?cachebust=1510194905180">
+  <link rel=manifest href="https://cpprefjp.github.io/static/favicons/manifest.json?cachebust=1510194905180">
+  <link rel=mask-icon href="https://cpprefjp.github.io/static/favicons/safari-pinned-tab.svg?cachebust=1510194905180" color=#f5f8fc>
   <meta name=theme-color content=#f5f8fc>
-  <link rel=stylesheet href=https://cpprefjp.github.io/static/pygments/default.css>
+  <link rel=stylesheet href="https://cpprefjp.github.io/static/pygments/default.css?cachebust=1510194905180">
+  <!-- <link rel="stylesheet" href="https://cpprefjp.github.io/static/css/root.css"> -->
+  <!-- <link href="https://cpprefjp.github.io/static/kunai/css/kunai-stage-0.css?cachebust=1510194905180" rel=stylesheet>
+  <link href="https://cpprefjp.github.io/static/kunai/css/kunai-stage-1.css?cachebust=1510194905180" rel=stylesheet>
+  <link href="https://cpprefjp.github.io/static/kunai/css/kunai-stage-2.css?cachebust=1510194905180" rel=stylesheet>
+  <link href="https://cpprefjp.github.io/static/kunai/css/kunai-stage-3.css?cachebust=1510194905180" rel=stylesheet> -->
+  <script type="text/javascript" src="https://cpprefjp.github.io/DD4AF4F7-D3A3-6C4C-9904-979E00389943/main.js" charset="UTF-8"></script>
+  <!-- <script type=text/javascript src="https://cpprefjp.github.io/static/kunai/js/kunai-vendor.js?cachebust=1510194905180"></script>
+  <script type=text/javascript src="https://cpprefjp.github.io/static/kunai/js/kunai.js?cachebust=1510194905180"></script>
+  <script type=text/javascript>
+  document.addEventListener('DOMContentLoaded', function() {
+    var kn = new Kunai;
+    kn.cpprefjp();
+  });
+</script>
+  <script>
+    (function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+      (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date(); a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-56896607-1', 'auto');
+    ga('send', 'pageview');
+  </script> -->
 </head>
 
 <body>
@@ -48,7 +74,7 @@
         <div class="collapse navbar-collapse" id=navbar-collapse>
           <ul class="nav navbar-nav navbar-right">
             <li>
-              <div class="google-search">
+              <div class=google-search>
                 <script>
                   (function () {
                     var cx = '013316413321391058734:ji_u66hl7hq';
@@ -83,185 +109,10 @@
           </div>
           <div class=row>
             <div class="col-sm-12 content-header">
-              <ol class="breadcrumb">
-                <li itemscope itemtype=http://www.schema.org/SiteNavigationElement>
-                  <span>
-                    <a href=/index.html itemprop=url>
-                      <i class="fa fa-fw fa-home"></i>
-                    </a>
-                  </span>
-                </li>
-                <li itemscope itemtype=http://www.schema.org/SiteNavigationElement>
-                  <span>
-                    <a href=/reference1.html itemprop=url>
-                      <span itemprop=name>リファレンス1</span>
-                    </a>
-                  </span>
-                </li>
-                <li itemscope itemtype=http://www.schema.org/SiteNavigationElement>
-                  <span>
-                    <a href=/reference2.html itemprop=url>
-                      <span itemprop=name>リファレンス2</span>
-                    </a>
-                  </span>
-                </li>
-                <li itemscope itemtype=http://www.schema.org/SiteNavigationElement>
-                  <span>
-                    <a href=/reference3.html itemprop=url>
-                      <span itemprop=name>リファレンス3</span>
-                    </a>
-                  </span>
-                </li>
-                <li itemscope itemtype=http://www.schema.org/SiteNavigationElement>
-                  <span>
-                    <a href=/reference4.html itemprop=url>
-                      <span itemprop=name>リファレンス4</span>
-                    </a>
-                  </span>
-                </li>
-                <li itemscope itemtype=http://www.schema.org/SiteNavigationElement>
-                  <span>
-                    <a href=/reference5.html itemprop=url>
-                      <span itemprop=name>リファレンス5</span>
-                    </a>
-                  </span>
-                </li>
-                <li itemscope itemtype=http://www.schema.org/SiteNavigationElement>
-                  <span>
-                    <a href=/reference/vector.html itemprop=url>
-                      <span itemprop=name>vector</span>
-                    </a>
-                  </span>
-                </li>
+              <ol class=breadcrumb>
                 <li class=active itemscope itemtype=http://www.schema.org/SiteNavigationElement>
                   <span>
-                    <span itemprop=name>emplace_back_non_existent_identifier_operator[]</span>
-                  </span>
-                </li>
-              </ol>
-              <ol class="breadcrumb" style="display: none !important">
-                <li itemscope itemtype=http://www.schema.org/SiteNavigationElement>
-                  <span>
-                    <a href=/index.html itemprop=url>
-                      <i class="fa fa-fw fa-home"></i>
-                    </a>
-                  </span>
-                </li>
-                <li itemscope itemtype=http://www.schema.org/SiteNavigationElement>
-                  <span>
-                    <a href=/reference1.html itemprop=url>
-                      <span itemprop=name>リファレンス1</span>
-                    </a>
-                  </span>
-                </li>
-                <li itemscope itemtype=http://www.schema.org/SiteNavigationElement>
-                  <span>
-                    <a href=/reference2.html itemprop=url>
-                      <span itemprop=name>リファレンス2</span>
-                    </a>
-                  </span>
-                </li>
-                <li itemscope itemtype=http://www.schema.org/SiteNavigationElement>
-                  <span>
-                    <a href=/reference3.html itemprop=url>
-                      <span itemprop=name>リファレンス3</span>
-                    </a>
-                  </span>
-                </li>
-                <li itemscope itemtype=http://www.schema.org/SiteNavigationElement>
-                  <span>
-                    <a href=/reference4.html itemprop=url>
-                      <span itemprop=name>リファレンス4</span>
-                    </a>
-                  </span>
-                </li>
-                <li itemscope itemtype=http://www.schema.org/SiteNavigationElement>
-                  <span>
-                    <a href=/reference5.html itemprop=url>
-                      <span itemprop=name>リファレンス5</span>
-                    </a>
-                  </span>
-                </li>
-                <li itemscope itemtype=http://www.schema.org/SiteNavigationElement>
-                  <span>
-                    <a href=/reference6.html itemprop=url>
-                      <span itemprop=name>リファレンス6</span>
-                    </a>
-                  </span>
-                </li>
-                <li itemscope itemtype=http://www.schema.org/SiteNavigationElement>
-                  <span>
-                    <a href=/reference7.html itemprop=url>
-                      <span itemprop=name>リファレンス7</span>
-                    </a>
-                  </span>
-                </li>
-                <li itemscope itemtype=http://www.schema.org/SiteNavigationElement>
-                  <span>
-                    <a href=/reference8.html itemprop=url>
-                      <span itemprop=name>リファレンス8</span>
-                    </a>
-                  </span>
-                </li>
-                <li itemscope itemtype=http://www.schema.org/SiteNavigationElement>
-                  <span>
-                    <a href=/reference9.html itemprop=url>
-                      <span itemprop=name>リファレンス9</span>
-                    </a>
-                  </span>
-                </li>
-                <li itemscope itemtype=http://www.schema.org/SiteNavigationElement>
-                  <span>
-                    <a href=/reference10.html itemprop=url>
-                      <span itemprop=name>リファレンス10</span>
-                    </a>
-                  </span>
-                </li>
-                <li itemscope itemtype=http://www.schema.org/SiteNavigationElement>
-                  <span>
-                    <a href=/reference11.html itemprop=url>
-                      <span itemprop=name>リファレンス11</span>
-                    </a>
-                  </span>
-                </li>
-                <li itemscope itemtype=http://www.schema.org/SiteNavigationElement>
-                  <span>
-                    <a href=/reference12.html itemprop=url>
-                      <span itemprop=name>リファレンス12</span>
-                    </a>
-                  </span>
-                </li>
-                <li itemscope itemtype=http://www.schema.org/SiteNavigationElement>
-                  <span>
-                    <a href=/reference13.html itemprop=url>
-                      <span itemprop=name>リファレンス13</span>
-                    </a>
-                  </span>
-                </li>
-                <li itemscope itemtype=http://www.schema.org/SiteNavigationElement>
-                  <span>
-                    <a href=/reference14.html itemprop=url>
-                      <span itemprop=name>リファレンス14</span>
-                    </a>
-                  </span>
-                </li>
-                <li itemscope itemtype=http://www.schema.org/SiteNavigationElement>
-                  <span>
-                    <a href=/reference15.html itemprop=url>
-                      <span itemprop=name>リファレンス15</span>
-                    </a>
-                  </span>
-                </li>
-                <li itemscope itemtype=http://www.schema.org/SiteNavigationElement>
-                  <span>
-                    <a href=/reference/vector.html itemprop=url>
-                      <span itemprop=name>vector</span>
-                    </a>
-                  </span>
-                </li>
-                <li class=active itemscope itemtype=http://www.schema.org/SiteNavigationElement>
-                  <span>
-                    <span itemprop=name>emplace_back_non_existent_identifier_operator[]</span>
+                    <i class="fa fa-fw fa-home"></i>
                   </span>
                 </li>
               </ol>
@@ -272,128 +123,86 @@
             <div class="col-sm-12 edit-button">
               <p class=text-right>
                 <small> 最終更新日時:
-                  <span itemprop=datePublished content=2017-05-11T05:18:47> 2017年05月11日 05時18分47秒 </span>
+                  <span itemprop=datePublished content=2017-08-22T17:22:46> 2017年08月22日 17時22分46秒 </span>
                   <br>
                   <span itemprop=author itemscope itemtype=http://schema.org/Person>
-                    <span itemprop=name>Akira Takahashi</span>
+                    <span itemprop=name>Nana Sakisaka</span>
                   </span> が更新 </small>
               </p>
               <p class=text-right>
-                <a class=history target=_blank href=https://github.com/cpprefjp/site/commits/master/reference/vector/emplace_back.md>
+                <a class=history target=_blank href=https://github.com/cpprefjp/site/commits/master/index.md>
                   <span class="fa fa-fw fa-clock-o fa-flip-horizontal"></span>履歴 </a>
-                <a class=edit target=_blank href=https://github.com/cpprefjp/site/edit/master/reference/vector/emplace_back.md>
+                <a class=edit target=_blank href=https://github.com/cpprefjp/site/edit/master/index.md>
                   <span class="fa fa-fw fa-pencil"></span>編集 </a>
               </p>
             </div>
           </div>
           <div class=row>
             <div class="col-sm-12 content-body">
-              <div class=identifier-type>function</div>
-              <div class=header>&lt;vector&gt;</div>
               <h1 itemprop=name>
-                <span class=namespace title="namespace std">std::</span>
-                <span class=class title="class vector">vector::</span>
-                <span class=token>emplace_back_non_existent_identifier_operator[]</span>
-                <span class="cpp cpp11" title=C++11で追加>(C++11)</span>
-                <span class="cpp cpp20deprecated" title=C++20で非推奨>(C++20)</span>
-                <span class="cpp cpp114514removed" title=C++114514で削除>(C++114514)</span>
+                <span class=token>cpprefjp - C++日本語リファレンス</span>
               </h1>
               <div itemprop=articleBody>
-                <p>
-                  <div class=codehilite>
-                    <pre><span class=k>template</span> <span class=o>&lt;</span><span class=n>class</span><span class=p>...</span> <span class=n>Args</span><span class=o>&gt;</span>
-<span class=kt>void</span> <span class=n>emplace_back</span><span class=p>(</span><span class=n>Args</span><span class=o>&amp;&amp;</span><span class=p>...</span> <span class=n>args</span><span class=p>);</span>
-
-<span class=k>template</span> <span class=o>&lt;</span><span class=n>class</span><span class=p>...</span> <span class=n>Args</span><span class=o>&gt;</span>
-<span class=kt>void</span> <span class=n>vector</span><span class=o>&lt;</span><span class=kt>bool</span><span class=o>&gt;::</span><span class=n>emplace_back</span><span class=p>(</span><span class=n>Args</span><span class=o>&amp;&amp;</span><span class=p>...</span> <span class=n>args</span><span class=p>);</span> <span class=c1>// C++14</span></pre>
-                  </div>
-                </p>
-                <h2>概要</h2>
-                <p>直接構築で新たな要素を末尾に追加する。</p>
-                <p>この関数の引数
-                  <code>args...</code>は、要素型Tのコンストラクタ引数である。当関数の内部で要素型
-                  <code>T</code>のコンストラクタを呼び出し、追加する要素を構築する。</p>
-                <h2>戻り値</h2>
-                <p>なし</p>
-                <h2>計算量</h2>
-                <p>償却定数時間。</p>
-                <p>この関数を呼び出す前に
-                  <code><a href=https://cpprefjp.github.io/reference/vector/size.html>size()</a> &lt; <a href=https://cpprefjp.github.io/reference/vector/capacity.html>capacity()</a></code>であった場合、この関数の実行は定数時間で行われる。そうでない場合は、メモリ領域の再確保と、その領域への要素のコピーもしくはムーブが行われるため、線形時間で実行される。</p>
-                <p>
-                  <code>vector</code>の実装で行われるメモリ確保戦略では、再確保の際にそれら要素がぴったり収まるサイズを確保するのではなく、少し多めの1.5倍や2倍といったサイズのメモリを確保し、再確保の回数を減らしている。事前に追加する要素の数がわかっている場合には
-                  <code><a href=https://cpprefjp.github.io/reference/vector/reserve.html>reserve()</a></code>メンバ関数で事前にその要素数分のメモリを確保し、そうでない場合には
-                  <code>vector</code>のメモリ確保戦略に任せるのがよいだろう。</p>
-                <h2>備考</h2>
-                <ul>
-                  <li>再確保の可能性、イテレータの有効性への影響、例外発生時に副作用が発生しない保証はいずれも
-                    <code><a href=https://cpprefjp.github.io/reference/vector/push_back.html>push_back()</a></code>と同様。</li>
-                </ul>
-                <h2>例</h2>
-                <p>
-                  <div class=codehilite>
-                    <pre><span class=cp>#include <a href=https://cpprefjp.github.io/reference/iostream.html>&lt;iostream&gt;</a></span>
-<span class=cp>#include <a href=https://cpprefjp.github.io/reference/vector.html>&lt;vector&gt;</a></span>
-<span class=cp>#include <a href=https://cpprefjp.github.io/reference/utility.html>&lt;utility&gt;</a></span>
-<span class=cp>#include <a href=https://cpprefjp.github.io/reference/string.html>&lt;string&gt;</a></span>
-<span class=cp>#include <a href=https://cpprefjp.github.io/reference/algorithm.html>&lt;algorithm&gt;</a></span>
-
-<span class=kt>int</span> <span class=nf>main</span><span class=p>()</span>
-<span class=p>{</span>
-  <span class=n><a href=https://cpprefjp.github.io/reference/vector.html>std::vector</a></span><span class=o>&lt;</span><span class=n><a href=https://cpprefjp.github.io/reference/utility/pair.html>std::pair</a></span><span class=o>&lt;</span><span class=kt>int</span><span class=p>,</span> <span class=n><a href=https://cpprefjp.github.io/reference/string/basic_string.html>std::string</a></span><span class=o>&gt;&gt;</span> <span class=n>v</span><span class=p>;</span>
-
-  <span class=n>v</span><span class=p>.</span><span class=n><span style=color:#ff0000>emplace_back</span></span><span class=p>(</span><span class=mi>3</span><span class=p>,</span> <span class=n><a href=https://cpprefjp.github.io/reference/string/basic_string.html>std::string</a></span><span class=p>(</span><span class=s>"hello"</span><span class=p>));</span>
-  <span class=n><a href=https://cpprefjp.github.io/reference/vector/push_back.html>v.push_back</a></span><span class=p>(</span><span class=n><a href=https://cpprefjp.github.io/reference/utility/make_pair.html>std::make_pair</a></span><span class=p>(</span><span class=mi>1</span><span class=p>,</span> <span class=n><a href=https://cpprefjp.github.io/reference/string/basic_string.html>std::string</a></span><span class=p>(</span><span class=s>"world"</span><span class=p>)));</span>
-
-  <span class=n><a href=https://cpprefjp.github.io/reference/algorithm/for_each.html>std::for_each</a></span><span class=p>(</span><span class=n><a href=https://cpprefjp.github.io/reference/vector/begin.html>v.begin()</a></span><span class=p>,</span> <span class=n><a href=https://cpprefjp.github.io/reference/vector/end.html>v.end()</a></span><span class=p>,</span> <span class=p>[](</span><span class=n>decltype</span><span class=p>(</span><span class=n>v</span><span class=p>)</span><span class=o>::</span><span class=n>const_reference</span> <span class=n>x</span><span class=p>)</span> <span class=p>{</span>
-    <span class=n><a href=https://cpprefjp.github.io/reference/iostream/cout.html>std::cout</a></span> <span class=o>&lt;&lt;</span> <span class=n>x</span><span class=p>.</span><span class=n>first</span> <span class=o>&lt;&lt;</span> <span class=sc>','</span> <span class=o>&lt;&lt;</span> <span class=n>x</span><span class=p>.</span><span class=n>second</span> <span class=o>&lt;&lt;</span> <span class=n><a href=https://cpprefjp.github.io/reference/ostream/endl.html>std::endl</a></span><span class=p>;</span>
-  <span class=p>});</span>
-<span class=p>}</span>
-</pre>
-                  </div>
-                </p>
-                <h3>出力</h3>
-                <p>
-                  <pre><code>3,hello
-1,world
-</code></pre>
-                </p>
-                <h2>バージョン</h2>
-                <h3>言語</h3>
-                <ul>
-                  <li>C++11</li>
-                </ul>
-                <h3>処理系</h3>
+                <p>本サイトcpprefjpは、プログラミング言語C++のリファレンスを提供するWebサイトです。</p>
+                <p>最新C++バージョンのリファレンスを提供していきます。</p>
+                <h2>運営方針</h2>
+                <p>本リファレンスサイトは、C++言語の最新のリファレンスを常に提供し続けることを目標にしています。</p>
+                <p>各クラス、関数にはそれぞれ1つ以上のサンプルコードを付けていく方針です。</p>
+                <p>本サイトでは、他サイトおよび規格書の直接的な翻訳ではなく、編集者の調査と考えに基づいた解説を提供していきます。</p>
+                <h2>参加方法</h2>
+                <p>本サイトは、多くのユーザの手によって書かれています。</p>
+                <p>あなたがこの cpprefjp プロジェクトに参加したいのであれば、私達はそれをとても歓迎します。</p>
+                <p>cpprefjp プロジェクトに参加する方法は簡単です。</p>
+                <ol>
+                  <li>
+                    <a href="https://github.com/cpprefjp/site/issues?state=open" target=_blank>cpprefjp の Issues</a> にアクセスし、</li>
+                  <li>あなたが手伝えそうな、まだ誰にもアサインされていないタスクを見つけ、</li>
+                  <li>その Issue のコメントに「このタスクやります」と書く</li>
+                </ol>
+                <p>これだけです。</p>
+                <p>あとは、そのタスクを完了させて pull request を送れば、あなたも cpprefjp のコミッタになれます。</p>
+                <h2>編集者向けのさらなる情報</h2>
+                <p>本サイトは、GitHubのリポジトリ上で、Markdown形式でリファレンスを記載し、GitHub Pagesに自動反映するという形をとっています。本サイトのMarkdownソースは、以下のリポジトリにあります。</p>
                 <ul>
                   <li>
-                    <a href=https://cpprefjp.github.io/implementation.html#clang>Clang</a>: ??</li>
-                  <li>
-                    <a href=https://cpprefjp.github.io/implementation.html#gcc>GCC</a>: </li>
-                  <li>
-                    <a href=https://cpprefjp.github.io/implementation.html#gcc>GCC, C++11 mode</a>: 4.7.0</li>
-                  <li>
-                    <a href=https://cpprefjp.github.io/implementation.html#icc>ICC</a>: ??</li>
-                  <li>
-                    <a href=https://cpprefjp.github.io/implementation.html#visual_cpp>Visual C++</a>: 12.0</li>
-                </ul>
-                <h2>参照</h2>
-                <ul>
-                  <li>
-                    <a href=http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2008/n2680.pdf target=_blank>N2680 Proposed Wording for Placement Insert (Revision 1)</a>
-                  </li>
-                  <li>
-                    <a href=http://www.open-std.org/jtc1/sc22/wg21/docs/lwg-defects.html#2187 target=_blank>LWG Issue 2187.
-                      <code>vector&lt;bool&gt;</code> is missing emplace and
-                      <code>emplace_back</code> member functions</a>
-                  </li>
-                  <li>
-                    <a href=http://www.open-std.org/jtc1/sc22/wg21/docs/lwg-defects.html#2252 target=_blank>LWG Issue 2252. Strong guarantee on
-                      <code>vector::push_back()</code> still broken with C++11?</a>
-                    <ul>
-                      <li>経緯の説明は、
-                        <code><a href=https://cpprefjp.github.io/reference/vector/push_back.html>vector::push_back()</a></code>ページを参照。</li>
-                    </ul>
+                    <a href=https://github.com/cpprefjp/site target=_blank>https://github.com/cpprefjp/site</a>
                   </li>
                 </ul>
+                <p>上記リポジトリのREADMEに、コアメンバの一覧を記載してありますので、何かありましたらそのうちの誰か、もしくはリポジトリへのIssueという形でご相談ください。</p>
+                <p>本サイトの編集方法については、以下のドキュメントを参照してください。</p>
+                <ul>
+                  <li>
+                    <a href=https://cpprefjp.github.io/editors_doc/start_editing.html>cpprefjpを編集するには</a>
+                  </li>
+                </ul>
+                <p>本サイトのコンテンツを作成、編集するにあたり、仕様を熟知し、一人で完璧に正しい内容を書くことは要求しません。</p>
+                <p>たとえ間違ったことを記載した場合や、不安の残る内容を記載した場合でも、それに気づいた誰かが修正してくれます。</p>
+                <h2>Twitter ハッシュタグ</h2>
+                <p>
+                  <a href="https://twitter.com/search?q=%23cpprefjp" target=_blank>#cpprefjp</a>
+                </p>
+                <h2>その他参考情報</h2>
+                <p>以下のWebサイトから転載許可をいただいています。</p>
+                <p>翻訳や解説などで活用してください：</p>
+                <ul>
+                  <li>
+                    <a href=http://episteme.wankuma.com/stlprog/index.html target=_blank>Standard Template Library プログラミング on the Web</a>
+                  </li>
+                </ul>
+                <h2>ライセンスについて</h2>
+                <p>本サイトの情報は、
+                  <a href=https://creativecommons.org/licenses/by/3.0/ target=_blank>クリエイティブ・コモンズ 表示 3.0 非移植 ライセンス(CC BY)</a>の下に提供しています。</p>
+                <p>
+                  <img alt src=https://i.creativecommons.org/l/by/3.0/88x31.png>
+                </p>
+                <p>cpprefjpサイトのアイコン・ロゴ画像は、
+                  <a href=https://creativecommons.org/licenses/by-nc-nd/4.0/deed.ja target=_blank>クリエイティブ・コモンズ 表示 - 非営利 - 改変禁止 4.0 国際 (CC BY-NC-ND 4.0)</a>の下に提供しています。</p>
+                <p>高解像度画像データ：
+                  <a href=https://github.com/cpprefjp/image/tree/master/cpprefjp/icon target=_blank>cpprefjp/image</a>
+                </p>
+                <p>
+                  <img alt src=https://licensebuttons.net/l/by-nc-nd/4.0/88x31.png>
+                </p>
               </div>
             </div>
           </div>
@@ -940,7 +749,7 @@
                   </li>
                 </ul>
               </li>
-              <li class="parent_li active">
+              <li class="parent_li ">
                 <span class=treespan></span>
                 <a href=/reference.html>リファレンス</a>
                 <ul>
@@ -2322,6 +2131,10 @@
                       <li>
                         <a href=/reference/cmath/exp2.html>exp2</a>
                         <span class="cpp-sidebar cpp11" title=C++11で追加>(C++11)</span>
+                      </li>
+                      <li>
+                        <a href=/reference/cmath/expint.html>expint</a>
+                        <span class="cpp-sidebar cpp17" title=C++17で追加>(C++17)</span>
                       </li>
                       <li>
                         <a href=/reference/cmath/expm1.html>expm1</a>
@@ -4671,6 +4484,10 @@
                         <a href=/reference/iterator/rend.html>rend</a>
                         <span class="cpp-sidebar cpp14" title=C++14で追加>(C++14)</span>
                       </li>
+                      <li>
+                        <a href=/reference/iterator/size.html>size</a>
+                        <span class="cpp-sidebar cpp17" title=C++17で追加>(C++17)</span>
+                      </li>
                       <li class="parent_li ">
                         <span class=treespan></span>
                         <a href=/reference/iterator/back_insert_iterator.html>back_insert_iterator</a>
@@ -6451,11 +6268,19 @@
                         <a href=/reference/numeric/adjacent_difference.html>adjacent_difference</a>
                       </li>
                       <li>
+                        <a href=/reference/numeric/gcd.html>gcd</a>
+                        <span class="cpp-sidebar cpp17" title=C++17で追加>(C++17)</span>
+                      </li>
+                      <li>
                         <a href=/reference/numeric/inner_product.html>inner_product</a>
                       </li>
                       <li>
                         <a href=/reference/numeric/iota.html>iota</a>
                         <span class="cpp-sidebar cpp11" title=C++11で追加>(C++11)</span>
+                      </li>
+                      <li>
+                        <a href=/reference/numeric/lcm.html>lcm</a>
+                        <span class="cpp-sidebar cpp17" title=C++17で追加>(C++17)</span>
                       </li>
                       <li>
                         <a href=/reference/numeric/partial_sum.html>partial_sum</a>
@@ -11401,7 +11226,7 @@
                       </li>
                     </ul>
                   </li>
-                  <li class="parent_li active">
+                  <li class="parent_li ">
                     <span class=treespan></span>
                     <a href=/reference/vector.html>vector</a>
                     <ul>
